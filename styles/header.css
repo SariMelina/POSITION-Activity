@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 0;
+    background-color:  #acda57 ;
+}
+header {
+    background-color: white;
+    border-bottom: rgb(0, 0, 109) 1px solid;
+}
+nav {
+    max-width: 1200px;    
+    margin: auto;
+    padding: 10px 0px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    font-weight: 500;
+    font-size: 25px;
+}
+header ul {    
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header ul a:hover {
+    color: #c9ff63 ;
+}
+header ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;    
+    font-weight: 200;
+    margin-left: 30px;
+}
+#ayuda {
+    display: none;
+}
+@media(max-width:750px){
+    nav {
+        max-width: 400px;
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+    }
+    #lista {
+        display: none;
+    }
+    #ayuda {
+        display: inline;
+        font-size: 30px;
+        color: black;
+    }
+}
